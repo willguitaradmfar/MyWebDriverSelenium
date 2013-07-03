@@ -32,6 +32,12 @@ public class TestSearch {
 				"Python",
 				driver.findElement(By
 						.xpath("//html/body/div[5]/div[2]/div/div[6]/div/div[3]/div/div[2]/div/ol/li/div/h3/a/em")).getText());
+		googlePage.digitarTextoBusca("Arduino");
+                SeleniumUtils.wait(2);
+                googlePage.clickBotaoBusca();
+                SeleniumUtils.wait(2);
+
+
 	}
 
 	@Before
